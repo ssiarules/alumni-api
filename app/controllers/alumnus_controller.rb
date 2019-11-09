@@ -1,19 +1,19 @@
-class AlumnisController < ApplicationController
+class AlumnusController < ApplicationController
   before_action :set_alumni, only: [:show, :update, :destroy]
 
-  # GET /alumnis
+  # GET /alumnus
   def index
     @alumnis = Alumni.all
 
     render json: @alumnis
   end
 
-  # GET /alumnis/1
+  # GET /alumnus/1
   def show
     render json: @alumni
   end
 
-  # POST /alumnis
+  # POST /alumnus
   def create
     @alumni = Alumni.new(alumni_params)
 
@@ -24,7 +24,7 @@ class AlumnisController < ApplicationController
     end
   end
 
-  # PATCH/PUT /alumnis/1
+  # PATCH/PUT /alumnus/1
   def update
     if @alumni.update(alumni_params)
       render json: @alumni
@@ -33,7 +33,7 @@ class AlumnisController < ApplicationController
     end
   end
 
-  # DELETE /alumnis/1
+  # DELETE /alumnus/1
   def destroy
     @alumni.destroy
   end

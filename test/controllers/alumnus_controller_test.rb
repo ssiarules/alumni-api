@@ -1,12 +1,12 @@
 require 'test_helper'
 
-class AlumnisControllerTest < ActionDispatch::IntegrationTest
+class AlumnusControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @alumni = alumnis(:one)
+    @alumni = alumnus(:one)
   end
 
   test "should get index" do
-    get alumnis_url, as: :json
+    get alumnus_url, as: :json
     assert_response :success
   end
 
